@@ -1,0 +1,14 @@
+{
+  "name": "ts_couse",
+  "version": "1.0.0",
+  "description": "ts_udemy",
+  "main": "index.js",
+  "author": "Eduardo avila",
+  "license": "MIT",
+  "dependencies": {
+    "help": "^3.0.2"
+  },
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
