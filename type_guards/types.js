@@ -75,3 +75,17 @@ var object_chain = {
 // console.log(object_chain?.role?.name);
 var null_var = "";
 console.log((null_var !== null && null_var !== void 0 ? null_var : null_var));
+// const broken_hearts = (name: string | null) => {
+//   const inside_function = (epithet: string) => {
+//     return name.charAt(0) + " Here is my epithet " + epithet;
+//   };
+//   name = name || "no name";
+//   inside_function("Some stuff");
+// };
+var broken_hearts_good = function (name) {
+    var inside_function = function (epithet) {
+        return name.charAt(0) + " Here is my epithet " + epithet; // ? the exclamation sign deletes the null or undefined to the name type and just belowns the string part type
+    };
+    name = name || "no name";
+    inside_function("Some stuff");
+};

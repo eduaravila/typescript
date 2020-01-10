@@ -134,13 +134,13 @@ let object_chain = {
 let null_var = "";
 console.log(null_var ?? null_var);
 
-const broken_hearts = (name: string | null) => {
-  const inside_function = (epithet: string) => {
-    return name.charAt(0) + " Here is my epithet " + epithet;
-  };
-  name = name || "no name";
-  inside_function("Some stuff");
-};
+// const broken_hearts = (name: string | null) => {
+//   const inside_function = (epithet: string) => {
+//     return name.charAt(0) + " Here is my epithet " + epithet;
+//   };
+//   name = name || "no name";
+//   inside_function("Some stuff");
+// };
 
 const broken_hearts_good = (name: string | null) => {
   const inside_function = (epithet: string) => {

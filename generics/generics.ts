@@ -37,16 +37,16 @@ let dog_object = {
   age: 12
 };
 
-interface dog_object_type  {
-  name: string,
-  age: number
-};
+interface dog_object_type {
+  name: string;
+  age: number;
+}
 
-function partial_function(name:string,age:number):dog_object_type{
-    let new_dog: Partial<dog_object_type> = {}
-    new_dog.name = "Poky"
-    new_dog.age = 30
-    return new_dog as dog_object_type;
+function partial_function(name: string, age: number): dog_object_type {
+  let new_dog: Partial<dog_object_type> = {};
+  new_dog.name = "Poky";
+  new_dog.age = 30;
+  return new_dog as dog_object_type;
 }
 
 get_element_with_index(dog_object, "age");
@@ -58,9 +58,6 @@ class Some<T extends string | boolean> {
     this.habilities = [];
   }
   getHability(index: number) {
-    return this.habilities[index] ? this.habilities[index];
+    return this.habilities[index]!;
   }
-
 }
-
-
